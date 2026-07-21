@@ -1,82 +1,172 @@
 <!DOCTYPE html>
 
-<!--Aqui indico que voy a trabajar con HTML y en "es" que es en español--> 
+<!--Aqui indico que voy a trabajar con HTML y en "es" que la pagina esta en español--> 
 
 <html lang="es">
 
 <head>
 
-    <!--Aqui se configura la codificacion UTF-8 para el tema de los 
-    caracteres especiales-->
+    <!--Aqui configuro la codificacion UTF-8 para que se puedan ver bien
+    las tildes, la letra ñ y otros caracteres especiales-->
     <meta charset="UTF-8">
 
-    <!--Aqui esta configurado ya la pagina para que se adacte a diferentes
-    dispositivos -->
+    <!--Aqui configuro la pagina para que se adapte a diferentes
+    tamaños de pantalla como computador, tablet o celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Aqui se define el titulo de la pagina -->
+    <!--Aqui defino el titulo que se va a mostrar en la pestaña
+    del navegador -->
     <title>Xbox vs PlayStation</title>
+
 </head>
 
 <body>
 
-    <!--Creo el encabezado de la pagina -->
-    <header>
-
-        <h1>Xbox vs PlayStation</h1>
-
-        <!--Creo el menú de navegación -->
-        <nav>
-
-            <!--Creo el enlace hacia la pagina principal -->
-            <a href="index.html">Inicio</a>
-
-            <!--Creo un enlace hacia la pagina de contacto -->
-            <a href="contacto.html">Contacto</a>
-
-            
-        </nav>
-
-
-
-
-    </header>
-
-    <!--Creo el contenido principal de la pagina -->
+    <!--Creo el contenido principal que me corresponde desarrollar
+    en la pagina de inicio -->
     <main>
 
-        <!--Creo una sección para presentar el tema del blog -->
+        <!--Creo una primera sección para presentar el tema general
+        del blog comparativo -->
         <section>
 
-            <!--Uso un h2 porque este titulo esta dentro del contenido
-            principal y tiene menor jerarquia que el h1 encabezado -->
+            <!--Uso un h1 porque este es el titulo principal
+            del contenido de inicio -->
+            <h1>Xbox vs PlayStation</h1>
 
+            <!--Uso un h2 para complementar el titulo principal
+            y explicar mejor de que se trata el sitio -->
             <h2>Blog comparativo de consolas de videojuegos</h2>
 
-            <!--Creo un párrafo para presentar el tema del blog -->
-            <p>En este sitio comparamos Xbox y PlayStation para conocer
+            <!--Creo un párrafo corto para presentar el tema
+            y explicar que informacion va a encontrar el usuario -->
+            <p>
+                En este sitio comparamos Xbox y PlayStation para conocer
                 sus características, beneficios, desventajas, versiones
                 y diferencias principales.
             </p>
 
         </section>
 
+        <!--Creo una sección para mostrar de forma separada
+        la informacion de cada consola -->
+        <section>
+
+            <h2>Conoce las consolas</h2>
+
+            <!--Creo un articulo para agrupar la informacion de Xbox -->
+            <article>
+
+                <h3>Xbox</h3>
+
+                <p>
+                    Xbox es una marca de videojuegos desarrollada por Microsoft.
+                    Cuenta con diferentes consolas, videojuegos, servicios
+                    digitales y opciones de suscripción.
+                </p>
+
+            </article>
+
+            <!--Creo otro articulo para agrupar la informacion
+            de PlayStation -->
+            <article>
+
+                <h3>PlayStation</h3>
+
+                <p>
+                    PlayStation es una marca de videojuegos desarrollada por Sony.
+                    Es reconocida por sus consolas, juegos exclusivos
+                    y diferentes experiencias de entretenimiento.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!--Creo una sección para comparar los beneficios
+        y las desventajas de las dos consolas -->
+        <section>
+
+            <h2>Beneficios y desventajas</h2>
+
+            <!--Agrupo la informacion correspondiente a Xbox -->
+            <article>
+
+                <h3>Xbox</h3>
+
+                <h4>Beneficios</h4>
+
+                <ul>
+                    <li>Tiene acceso a diferentes juegos por medio de Game Pass.</li>
+                    <li>Permite jugar algunos títulos de generaciones anteriores.</li>
+                    <li>Se puede integrar con computadores que utilizan Windows.</li>
+                </ul>
+
+                <h4>Desventajas</h4>
+
+                <ul>
+                    <li>Algunos servicios necesitan una suscripción.</li>
+                    <li>El almacenamiento puede ser limitado para juegos pesados.</li>
+                </ul>
+
+            </article>
+
+            <!--Agrupo la informacion correspondiente a PlayStation -->
+            <article>
+
+                <h3>PlayStation</h3>
+
+                <h4>Beneficios</h4>
+
+                <ul>
+                    <li>Cuenta con juegos exclusivos reconocidos.</li>
+                    <li>Ofrece una buena experiencia gráfica.</li>
+                    <li>El control DualSense tiene funciones diferentes.</li>
+                </ul>
+
+                <h4>Desventajas</h4>
+
+                <ul>
+                    <li>Algunos juegos pueden tener precios altos.</li>
+                    <li>Algunos servicios también necesitan una suscripción.</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <!--Creo una sección para mostrar algunas de las versiones
+        principales de cada consola -->
+        <section>
+
+            <h2>Versiones principales</h2>
+
+            <article>
+
+                <h3>Xbox</h3>
+
+                <ul>
+                    <li>Xbox Series X</li>
+                    <li>Xbox Series S</li>
+                </ul>
+
+            </article>
+
+            <article>
+
+                <h3>PlayStation</h3>
+
+                <ul>
+                    <li>PlayStation 5 estándar</li>
+                    <li>PlayStation 5 edición digital</li>
+                    <li>PlayStation 5 Slim</li>
+                </ul>
+
+            </article>
+
+        </section>
+
     </main>
-
-    <!--Creo el pie de página con la informacion general del proyecto-->
-    <footer>
-
-        <!--Con <p></p> muestro el nombre del proyecto -->
-        <p>Proyecto: Xbox vs PlayStation</p>
-
-        <!--Con <p></p> indico el grupo encargado del proyecto -->
-        <p>Grupo: 5</p>
-
-        <!--Con <p></p> Agrego un correo x porque el laboratorio requiere
-        informacion de contacto sin usar datos personales -->
-        <p>Correo: contacto@xboxvsplaystation.com</p>
-
-    </footer>
 
 </body>
 
