@@ -1,176 +1,20 @@
 <!DOCTYPE html>
-
-<!--Aqui indico que voy a trabajar con HTML y en "es" que la pagina esta en español--> 
-
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Console Wars - Grupo 5</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body data-page="inicio">
+    <div data-include="navbar.html"></div>
 
-<head>
-
-    <!--Aqui configuro la codificacion UTF-8 para que se puedan ver bien
-    las tildes, la letra ñ y otros caracteres especiales-->
-    <meta charset="UTF-8">
-
-    <!--Aqui configuro la pagina para que se adapte a diferentes
-    tamaños de pantalla como computador, tablet o celular -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Aqui defino el titulo que se va a mostrar en la pestaña
-    del navegador -->
-    <title>Xbox vs PlayStation</title>
-
-</head>
-
-<body>
-
-    <!--Creo el contenido principal que me corresponde desarrollar
-    en la pagina de inicio -->
-    <main>
-
-        <!--Creo una primera sección para presentar el tema general
-        del blog comparativo -->
-        <section>
-
-            <!--Uso un h1 porque este es el titulo principal
-            del contenido de inicio -->
-            <h1>Xbox vs PlayStation</h1>
-
-            <!--Uso un h2 para complementar el titulo principal
-            y explicar mejor de que se trata el sitio -->
-            <h2>Blog comparativo de consolas de videojuegos</h2>
-
-            <!--Creo un párrafo corto para presentar el tema
-            y explicar que informacion va a encontrar el usuario -->
-            <p>
-                En este sitio comparamos Xbox y PlayStation para conocer
-                sus características, beneficios, desventajas, versiones
-                y diferencias principales.
-            </p>
-
-        </section>
-
-        <!--Creo una sección para mostrar de forma separada
-        la informacion de cada consola -->
-        <section>
-
-            <h2>Conoce las consolas</h2>
-
-            <!--Creo un articulo para agrupar la informacion de Xbox -->
-            <article>
-
-                <h3>Xbox</h3>
-
-                <p>
-                    Xbox es una marca de videojuegos desarrollada por Microsoft.
-                    Cuenta con diferentes consolas, videojuegos, servicios
-                    digitales y opciones de suscripción.
-                </p>
-
-            </article>
-
-            <!--Creo otro articulo para agrupar la informacion
-            de PlayStation -->
-            <article>
-
-                <h3>PlayStation</h3>
-
-                <p>
-                    PlayStation es una marca de videojuegos desarrollada por Sony.
-                    Es reconocida por sus consolas, juegos exclusivos
-                    y diferentes experiencias de entretenimiento.
-                </p>
-
-            </article>
-
-        </section>
-
-        <!--Creo una sección para comparar los beneficios
-        y las desventajas de las dos consolas -->
-        <section>
-
-            <h2>Beneficios y desventajas</h2>
-
-            <!--Agrupo la informacion correspondiente a Xbox -->
-            <article>
-
-                <h3>Xbox</h3>
-
-                <h4>Beneficios</h4>
-
-                <ul>
-                    <li>Tiene acceso a diferentes juegos por medio de Game Pass.</li>
-                    <li>Permite jugar algunos títulos de generaciones anteriores.</li>
-                    <li>Se puede integrar con computadores que utilizan Windows.</li>
-                </ul>
-
-                <h4>Desventajas</h4>
-
-                <ul>
-                    <li>Algunos servicios necesitan una suscripción.</li>
-                    <li>El almacenamiento puede ser limitado para juegos pesados.</li>
-                </ul>
-
-            </article>
-
-            <!--Agrupo la informacion correspondiente a PlayStation -->
-            <article>
-
-                <h3>PlayStation</h3>
-
-                <h4>Beneficios</h4>
-
-                <ul>
-                    <li>Cuenta con juegos exclusivos reconocidos.</li>
-                    <li>Ofrece una buena experiencia gráfica.</li>
-                    <li>El control DualSense tiene funciones diferentes.</li>
-                </ul>
-
-                <h4>Desventajas</h4>
-
-                <ul>
-                    <li>Algunos juegos pueden tener precios altos.</li>
-                    <li>Algunos servicios también necesitan una suscripción.</li>
-                </ul>
-
-            </article>
-
-        </section>
-
-        <!--Creo una sección para mostrar algunas de las versiones
-        principales de cada consola -->
-        <section>
-
-            <h2>Versiones principales</h2>
-
-            <article>
-
-                <h3>Xbox</h3>
-
-                <ul>
-                    <li>Xbox Series X</li>
-                    <li>Xbox Series S</li>
-                </ul>
-
-            </article>
-
-            <article>
-
-                <h3>PlayStation</h3>
-
-                <ul>
-                    <li>PlayStation 5 estándar</li>
-                    <li>PlayStation 5 edición digital</li>
-                    <li>PlayStation 5 Slim</li>
-                </ul>
-
-            </article>
-
-        </section>
-
+    <main class="page-main">
+      <div data-include="inicio.html"></div>
     </main>
 
-</body>
+    <div data-include="footer.html"></div>
 
+    <script src="js/load-components.js"></script>
+  </body>
 </html>
-
-
-
