@@ -1,7 +1,3 @@
-/**
- * Carga componentes HTML externos (navbar, secciones, footer).
- * Requiere servidor local (Live Server o python -m http.server).
- */
 async function loadComponents() {
   if (window.location.protocol === "file:") {
     document.body.insertAdjacentHTML(
