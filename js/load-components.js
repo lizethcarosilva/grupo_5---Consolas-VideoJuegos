@@ -1,16 +1,14 @@
 /**
- * Carga componentes HTML externos en contenedores del DOM.
+ * Carga componentes HTML externos (navbar, secciones, footer).
  * Requiere servidor local (Live Server o python -m http.server).
- * Ejemplo: data-include="footer.html"
  */
 async function loadComponents() {
   if (window.location.protocol === "file:") {
     document.body.insertAdjacentHTML(
       "afterbegin",
-      `<div class="alert alert-warning text-center m-0 rounded-0" role="alert">
+      `<div style="background:#fbbf24;color:#111;padding:12px;text-align:center;font-family:sans-serif;">
         No abras el archivo directo. Usa <strong>Live Server</strong>
-        (clic derecho en index.html → Open with Live Server)
-        o ejecuta en la terminal: <code>python -m http.server 5500</code>
+        o ejecuta: <code>python -m http.server 5500</code>
       </div>`
     );
     return;
@@ -29,10 +27,23 @@ async function loadComponents() {
         el.outerHTML = await response.text();
       } catch (error) {
         console.error(error);
-        el.innerHTML = `<p class="text-danger text-center p-3">Error al cargar: ${file}</p>`;
+        el.innerHTML = `<p style="color:#f87171;text-align:center;padding:1rem;">Error al cargar: ${file}</p>`;
       }
     })
   );
+
+  markActiveNavLink();
+}
+
+function markActiveNavLink() {
+  const page = document.body.getAttribute("data-page");
+  if (!page) return;
+
+  document.querySelectorAll(".barraNavegacion a[data-page]").forEach((link) => {
+    if (link.getAttribute("data-page") === page) {
+      link.classList.add("active");
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", loadComponents);
